@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+/* Estilos etiqueta a */
+
+a{
+    color: rgb(0, 0, 0);
+}
+
+/* Estilos contendor padre */
+.bb{
+    position: relative;
+    background-image: url('https://sena.edu.co/es-co/Noticias/newsletter/SENA%20INFORMA%20154/Ed154-SENAINF_02.png.gif');
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    z-index: 0; 
+}
+
+.bb::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.801); 
+    z-index: -1; 
+}
+
+.bb * {
+    position: relative;
+    z-index: 1;
+}
+
+
+.Contenedor{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+    padding: 2%;
+    /* margin-top: 4%; */
+}
+
+/* Estilos Contenedor Padre Login */
+
+.Login{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    width: 33.3%;
+}
+
+/* Estilos Form */
+
+.Loogin{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    background-color: white;
+    padding: 7%;
+    border-radius: 30px;
+    width: 80%;
+}
+
+/* Estilos abajo Form */
+
+.Opp{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+
+}
+
+
+/*1 Estilos de las etiquetas dentro del form */
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 2.7rem;
+    align-items: center;
+    width: 90%;
+}
+
+.LL{
+    text-decoration: none;
+}
+
+.IP{
+    display: flex;
+    gap: 1rem;
+    width: 90%;
+    align-items: center;
+
+}
+.IP ion-icon{
+    min-width: 20px;
+    font-size: 22px;
+}
+.TD{
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    align-items: center;
+}
+.TD ion-icon{
+    min-width: 25px;
+    font-size: 22px;
+}
+.IP input{
+    border-radius: 10px;
+    padding: 10px;
+    outline: 0px;
+}
+
+input::placeholder{
+    color: rgb(66, 65, 65);
+}
+
+.BB{
+    padding: 8px;
+    background-color:  #04a404;
+    border-radius: 30px;
+    border-style: none;
+    cursor: pointer;
+    color: white;
+}
+
+/* Estilos Select */
+
+select {
+    /* background-color: #f2f2f2; */
+    outline: 0px;
+    color: #333;
+    /* font-size: 13px; */
+    /* border-radius: 30px; */
+    padding: 8px;
+    width: 275px;
+    height: 47px;
+    border-radius: 10px;
+}
+select:hover {
+    cursor: pointer;
+}
+
+select option {
+    background-color: #f2f2f2;
+    color: #333;
+    font-size: 13px;
+    border: 1px solid #ccc;
+    padding: 8%;
+}
+select option:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+
+
+/* Estilos contenedor del logo de la app */
+
+.Logo{
+    display: flex;
+    width: 33.3%;
+    align-items: center;
+    justify-content: center;
+    margin-top: -4%;
+}
+.logo{
+    width: 45%;
+    /* height: 30vh; */
+}
+
+/* Estilos contenedor del escudo del Sena */
+
+.Escudo{
+    width: 33.3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -4%;
+}
+.escudo{
+    width: 45%;
+    /* height: 30vh; */
+}
+
+
+/* Medias Query */
+@media (min-width: 300px) and (max-width: 400px) {
+    .Escudo{
+        width: 0%;
+    }
+    .Logo{
+        width: 0%;
+    }
+    .Login{
+        width: 100%;
+        margin-top: 7%;
+    }
+    .Loogin{
+        margin-right: 8%;
+        margin-top: 14%;
+    }
+    .TD{
+        width: 100%;
+        margin-right: 8%;
+    }
+    .IP{
+        width: 100%;
+        margin-right: 7%;
+    }
+    .IP input{
+        width: 99%;
+    }
+     .formulario{
+        width: 100%;
+     }
+     form{
+        width: 100%;
+     }
+}
+
+@media (min-width: 400px) and (max-width: 430px) {
+    .Escudo{
+        width: 0%;
+    }
+    .Logo{
+        width: 0%;
+    }
+    .Login{
+        width: 100%;
+        margin-top: 2%;
+    }
+    .Loogin{
+        margin-right: 3%;
+        margin-top: 10%;
+    }
+}
+
+@media (min-width: 431px) and (max-width: 510px) {
+    .Escudo{
+        width: 0%;
+    }
+    .Logo{
+        width: 0%;
+    }
+    .Login{
+        width: 90%;
+        margin-top: 9%;
+        height: 0%;
+    }
+    .Loogin{
+        margin-right: 2%;
+        height: 0%;
+    }
+}
+@media (min-width: 510px) and (max-width: 550px) {
+    .Escudo{
+        width: 0%;
+    }
+    .Logo{
+        width: 0%;
+    }
+    .Login{
+        width: 85%;
+        margin-top: 8%;
+        height: 0%;
+    }
+    .Loogin{
+        margin-right: 2%;
+        height: 0%;
+    }
+}
+@media (min-width: 550px) and (max-width: 610px) {
+    .Escudo{
+        width: 0%;
+    }
+    .Logo{
+        width: 0%;
+    }
+    .Login{
+        width: 80%;
+        margin-top: 7%;
+        height: 0%;
+    }
+    .Loogin{
+        margin-right: 2%;
+        height: 0%;
+    }
+}
+@media (min-width: 610px) and (max-width: 710px) {
+    .Escudo{
+        width: 0%;
+    }
+    .Logo{
+        width: 0%;
+    }
+    .Login{
+        width: 70%;
+        margin-top: 5%;
+        height: 0%;
+    }
+    .Loogin{
+        margin-right: 2%;
+        height: 0%;
+    }
+}
+
+@media (min-width: 710px) and (max-width: 810px) {
+    .Escudo{
+        width: 0%;
+    }
+    .Logo{
+        width: 0%;
+    }
+    .Login{
+        width: 60%;
+        margin-top: 3%;
+        height: 0%;
+    }
+    .Loogin{
+        margin-right: 2%;
+        height: 0%;
+    }
+}
+
+@media (min-width: 810px) and (max-width: 910px) {
+    .Login{
+        width: 80%;
+        margin-top: 2%;
+        height: 0%;
+    }
+    .Loogin{
+        margin-right: 2%;
+        height: 0%;
+    }
+}
+
+
+
+@media (min-width: 910px) and (max-width: 1010px) {
+    .Login{
+        width: 60%;
+        margin-top: 1%;
+        height: 0%;
+    }
+    .Loogin{
+        margin-right: 2%;
+        height: 0%;
+    }
+}
+
+@media (min-width: 1010px) and (max-width: 1110px) {
+    .Login{
+        width: 50%;
+        margin-top: 0%;
+        height: 0%;
+    }
+    .Loogin{
+        margin-right: 2%;
+        height: 0%;
+    }
+}
+
+@media (min-width: 1110px) and (max-width: 1210px) {
+    .Login{
+        width: 45%;
+        margin-top: 0%;
+        height: 0%;
+    }
+    .Loogin{
+        margin-right: 2%;
+        height: 0%;
+    }
+}
+
+@media (min-width: 1210px) and (max-width: 1310px) {
+    .Login{
+        width: 40%;
+        margin-top: 0%;
+        height: 0%;
+    }
+    .Loogin{
+        margin-right: 2%;
+        height: 0%;
+    }
+}
+@media (min-width: 1310px) and (max-width: 1410px) {
+    .Login{
+        width: 35%;
+        margin-top: 0%;
+        height: 0%;
+    }
+    .Loogin{
+        margin-right: 2%;
+        height: 0%;
+    }
+} 

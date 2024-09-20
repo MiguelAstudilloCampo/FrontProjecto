@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Contenedor Principal */
+
+.Contenedor_Principal{
+    position: relative;
+    background-image: url('img/Ed154-SENAINF_02.png.gif');
+    background-size: cover;
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    z-index: 0; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Contenedor_Principal::before {
+    content: "";
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.801); 
+    z-index: -1; 
+}
+
+.Contenedor_Principal * {
+    position: relative;
+    z-index: 1;
+}
+
+/* Contenedor Hijo */
+
+.Contenedor_Hijo{
+    display: flex;
+    justify-content: center;
+    width: 75%;
+
+}
+
+/* Contenedor info */
+
+.Contenedor_info{
+    width: 40%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    gap: 2rem;
+    background-color:  #04a404;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.Contenedor_info h1{
+    color: white;
+}
+.Contenedor_info img{
+    width: 40%;
+}
+.Contenedor_info p{
+    color: white;
+    text-align: center;
+}
+
+/* Contenedor form */
+
+.Contenedor_form {
+    width: 40%;
+    padding: 3%;
+    background-color: white;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+/* ----------- */
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* ----------- */
+
+.Contenedor_form .encabezado_login{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Contenedor_form .encabezado_login img{
+width: 45%;
+}
+
+.Contenedor_form .encabezado_login h2{
+    display: flex;
+    color: #04a404;
+    align-items: center;
+    justify-content: center;
+}
+
+.Contenedor_form .encabezado_login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ----------- */
+
+.Contenedor_form .cajas_login  {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.Contenedor_form .cajas_login .select_login {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.Contenedor_form .cajas_login .select_login select {
+    display: flex;
+    padding: 2%;
+    border-radius: 10px;
+    border: solid 0.5px;
+}
+
+
+.Contenedor_form .cajas_login .documento_login {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.Contenedor_form .cajas_login .documento_login input {
+    padding: 2%;
+    border-radius: 10px;
+    border: solid 0.5px;
+}
+
+.Contenedor_form .cajas_login .contraseña_login {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.Contenedor_form .cajas_login .contraseña_login input {
+    padding: 2%;
+    border-radius: 10px;
+    border: solid 0.5px;
+}
+
+
+
+
+
+
+/* ----------- */
+
+
+.Contenedor_form .botones_login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Contenedor_form .botones_login button{
+    display: flex;
+    color: white;
+    background-color: #04a404;
+    border : solid 0.5px white;
+    border-radius: 30px;
+    padding: 3.5%;
+    cursor: pointer;
+}
+
+/* ----------- */
+
+
+.Contenedor_form .enlaces_login{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.Contenedor_form .enlaces_login a{
+    color: rgb(50, 50, 202);
+}
